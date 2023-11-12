@@ -65,8 +65,8 @@ button {
   padding-right: 16px;
 }
 .section {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .social-links .icon-link {
@@ -158,9 +158,89 @@ button {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*==========   END HEADER MOBILE STYLES   ============= */
+
+/* ++++++++++++++ HERO MOBILE SECTION    ++++++++++++++++ */
+.hero {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: 320px;
+  max-height: 432px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg@2x.jpg);
+  }
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  max-width: 224px;
+  margin-right: auto;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  margin-left: auto;
+}
+.btn {
+  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  gap: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  background: #404bbf;
+}
+
+.btn:hover {
+  background: #404bbf;
+}
+/* ==============  HERO MOBILE SECTION   ================ */
+
 /*++++++++++++++++++    0 ....768px    +++++++++++++++++++++*/
 
 @media screen and (max-width: 768px) {
+  /* ++++++++ MOBILE MENU+++++++++ */
   .mobile-open-btn {
     border: none;
     background-color: transparent;
@@ -249,6 +329,7 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+  /* ===========END MOBILE MENU========================= */
 }
 /*=================   0 ....768px    ====================*/
 
@@ -258,15 +339,13 @@ button {
   }
 }
 
+/* ++++++++++++ 320px ....& +++++++++++++++++++ */
 @media screen and (min-width: 320px) {
-  /* ++++++++++++ HEADER TABLET STYLES +++++++++++++++++++ */
-
   .container {
     width: 320px;
     margin: 0 auto;
   }
 }
-/* ============== End HEADER MOBILE STYLES ============== */
 
 /* ++++++++++++ TABLET STYLES +++++++++++++++++++ */
 @media screen and (min-width: 768px) {
@@ -345,6 +424,44 @@ button {
     display: none;
   }
   /* ============== End HEADER TABLET STYLES ============== */
+
+  /* +++++++++++++++ HERO TABLET SECTION  ++++++++++++++++ */
+  .hero {
+    max-width: 768px;
+    max-height: 436px;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    text-transform: none;
+    margin-top: 112px;
+    margin-bottom: 36px;
+  }
+  .btn {
+    margin-bottom: 112px;
+  }
+
+  /* =============== END HERO TABLET SECTION  ================ */
 }
 /* ============== End TABLET STYLES ============== */
 
@@ -365,5 +482,38 @@ button {
     gap: 40px;
   }
   /* ============== End HEADER DESKTOP STYLES ============== */
+  /* ++++++++++++++ HERO TABLET SECTION  ++++++++++++++ */
+  .hero {
+    max-width: 1440px;
+    max-height: 600px;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office1@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-top: 188px;
+    margin-bottom: 48px;
+  }
+  .btn {
+    margin-bottom: 188px;
+  }
+  /*============= HERO TABLET SECTION ============= */
 }
 /* ============== End DESKTOP STYLES ============== */

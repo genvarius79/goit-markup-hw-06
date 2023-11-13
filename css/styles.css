@@ -162,8 +162,8 @@ button {
 
 /* ++++++++++++++ HERO MOBILE SECTION    ++++++++++++++++ */
 .hero {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   max-width: 320px;
   max-height: 432px;
   display: flex;
@@ -202,7 +202,6 @@ button {
   text-transform: capitalize;
   max-width: 224px;
   margin-right: auto;
-  margin-top: 72px;
   margin-bottom: 72px;
   margin-left: auto;
 }
@@ -214,7 +213,6 @@ button {
   border: none;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px;
   gap: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -235,12 +233,105 @@ button {
 .btn:hover {
   background: #404bbf;
 }
-/* ==============  HERO MOBILE SECTION   ================ */
+/* ==============  END HERO MOBILE SECTION   ================ */
+
+/* ++++++++++++++ ABOUT AS MOBILE SECTION  ++++++++++++++ */
+.about-as-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.about-list-elements {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  gap: 8px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about-icon-container {
+  display: none;
+}
+.heder-three-about {
+  align-self: stretch;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+}
+.descripsion {
+  font-weight: 500;
+}
+/* ============== END ABOUT AS MOBILE SECTION  ============== */
+
+/* ++++++++++++++ OUR TEAM MOBILE SECTION ++++++++++++++ */
+.our-team {
+  background-color: #f4f4fd;
+}
+
+.heder-two-team {
+  margin-bottom: 72px;
+}
+.our-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+}
+.image-box {
+  display: flex;
+  max-width: 264px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.name-team {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.heder-thee-team {
+  text-align: center;
+}
+.description-teams {
+  text-align: center;
+}
+.team {
+  display: flex;
+  gap: 24px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.social-links .icon-link:hover,
+.social-links .icon-link:focus {
+  background-color: #404bbf;
+}
+/* ============== END OUR TEAM MOBILE SECTION  ============== */
 
 /*++++++++++++++++++    0 ....768px    +++++++++++++++++++++*/
 
 @media screen and (max-width: 768px) {
-  /* ++++++++ MOBILE MENU+++++++++ */
+  /* ++++++++  MOBILE MENU  +++++++++ */
   .mobile-open-btn {
     border: none;
     background-color: transparent;
@@ -329,7 +420,7 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
-  /* ===========END MOBILE MENU========================= */
+  /* ===========  END MOBILE MENU  ========================= */
 }
 /*=================   0 ....768px    ====================*/
 
@@ -355,7 +446,6 @@ button {
   }
   .container {
     width: 800px;
-    margin: 0 auto;
   }
   .navigation {
     display: flex;
@@ -423,10 +513,12 @@ button {
   .mobile-open-btn {
     display: none;
   }
-  /* ============== End HEADER TABLET STYLES ============== */
+  /* ============== END HEADER TABLET STYLES ============== */
 
   /* +++++++++++++++ HERO TABLET SECTION  ++++++++++++++++ */
   .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
     max-width: 768px;
     max-height: 436px;
 
@@ -454,19 +546,48 @@ button {
     line-height: 1.07;
     max-width: 496px;
     text-transform: none;
-    margin-top: 112px;
     margin-bottom: 36px;
-  }
-  .btn {
-    margin-bottom: 112px;
   }
 
   /* =============== END HERO TABLET SECTION  ================ */
+
+  /* ++++++++++++++ ABOUT AS TABLET SECTION  ++++++++++++++ */
+  .about-as-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .about-list-elements {
+    width: calc((100% - 24px) / 2);
+  }
+  .heder-three-about {
+    text-align: left;
+  }
+  /* ==============  END ABOUT AS TABLET SECTION  ============== */
+
+  /* ++++++++++++++ OUR TEAM TABLET SECTION ++++++++++++++ */
+  .our-team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+  .image-box {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* ============== END OUR TEAM TABLET SECTION  ============== */
 }
-/* ============== End TABLET STYLES ============== */
+/* ============== END TABLET STYLES ============== */
 
 /* ++++++++++++ DESKTOP STYLES +++++++++++++++++++ */
 @media screen and (min-width: 1158px) {
+  .section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
   /* ++++++++++++ HEADER DESKTOP STYLES +++++++++++++++++++ */
   .container {
     width: 1158px;
@@ -481,9 +602,11 @@ button {
     flex-direction: row;
     gap: 40px;
   }
-  /* ============== End HEADER DESKTOP STYLES ============== */
-  /* ++++++++++++++ HERO TABLET SECTION  ++++++++++++++ */
+  /* ============== END HEADER DESKTOP STYLES ============== */
+  /* ++++++++++++++ HERO DESKTOP SECTION  ++++++++++++++ */
   .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     max-width: 1440px;
     max-height: 600px;
 
@@ -508,12 +631,40 @@ button {
 
   .hero-title {
     max-width: 496px;
-    margin-top: 188px;
     margin-bottom: 48px;
   }
-  .btn {
-    margin-bottom: 188px;
+
+  /*============= END HERO DESKTOP SECTION ============= */
+
+  /* ++++++++++++++ ABOUT AS DESKTOP SECTION  ++++++++++++++ */
+  .about-as-list {
+    flex-wrap: nowrap;
+    row-gap: 24px;
   }
-  /*============= HERO TABLET SECTION ============= */
+  .about-list-elements {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .about-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    height: 112px;
+  }
+
+  /* ============== END ABOUT AS DESKTOP SECTION  ============== */
+
+  /* ++++++++++++++ OUR TEAM DESKTOP SECTION ++++++++++++++ */
+  .our-team-list {
+    flex-wrap: nowrap;
+  }
+  .image-box {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /* ============== END OUR TEAM DESKTOP SECTION  ============== */
 }
 /* ============== End DESKTOP STYLES ============== */

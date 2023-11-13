@@ -146,6 +146,7 @@
           <ul class="our-team-list list">
             <li class="image-box">
               <img
+                srcset="./images/coworker_1@2x.jpg 2x"
                 src="./images/coworker_1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -199,6 +200,7 @@
             </li>
             <li class="image-box">
               <img
+                srcset="./images/coworker_2@2x.jpg 2x"
                 src="./images/coworker_2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -251,6 +253,7 @@
             </li>
             <li class="image-box">
               <img
+                srcset="./images/coworker_3@2x.jpg 2x"
                 src="./images/coworker_3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -303,6 +306,7 @@
             </li>
             <li class="image-box">
               <img
+                srcset="./images/coworker_4@2x.jpg 2x"
                 src="./images/coworker_4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -359,15 +363,25 @@
 
       <!-- Our Portfolio -->
 
-      <!-- <section class="our-portfolio section">
-        <div class="container">
+      <section class="our-portfolio section">
+        <div class="container portfolio-container">
           <h2 class="head-two heder-two-portf">Our Portfolio</h2>
 
           <ul class="portfolio-list list">
             <li class="our-portfolio-items">
               <div class="portfolio-image">
                 <img
-                  src="./images/banking-app.jpg"
+                  srcset="
+                    ./images/banking-mobile-app.jpg     288w,
+                    ./images/banking-tablet-app.jpg     356w,
+                    ./images/banking-desktop-app.jpg    360w,
+                    ./images/banking-mobile-app@2x.jpg  576w,
+                    ./images/banking-tablet-app@2x.jpg  712w,
+                    ./images/banking-desktop-app@2x.jpg 720w,
+                    banking-tablet-app
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/banking-mobile-app.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -380,14 +394,24 @@
               </div>
               <div class="card-content">
                 <h3 class="head-three heder-three-portf">Banking App</h3>
-                <p class="descripsion">App</p>
+                <p class="descripsion decription-mobile">App</p>
               </div>
             </li>
 
             <li class="our-portfolio-items">
               <div class="portfolio-image">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/cashless-payment-mobile.jpg     288w,
+                    ./images/cashless-payment-tablet.jpg     356w,
+                    ./images/cashless-payment-desktop.jpg    360w,
+                    ./images/cashless-payment-mobile@2x.jpg  576w,
+                    ./images/cashless-payment-tablet@2x.jpg  712w,
+                    ./images/cashless-payment-desktop@2x.jpg 720w,
+                    banking-tablet-app
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/cashless-payment-mobile.jpg "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -400,14 +424,24 @@
               </div>
               <div class="card-content">
                 <h3 class="head-three heder-three-portf">Cashless Payment</h3>
-                <p class="descripsion">Marketing</p>
+                <p class="descripsion decription-mobile">Marketing</p>
               </div>
             </li>
 
             <li class="our-portfolio-items">
               <div class="portfolio-image">
                 <img
-                  src="./images/meditation-app.jpg"
+                  srcset="
+                    ./images/meditation-mobile-app.jpg     288w,
+                    ./images/meditation-tablet-app.jpg     356w,
+                    ./images/meditation-desktop-app.jpg    360w,
+                    ./images/meditation-mobile-app@2x.jpg  576w,
+                    ./images/meditation-tablet-app@2x.jpg  712w,
+                    ./images/meditation-desktop-app@2x.jpg 720w,
+                    banking-tablet-app
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/meditation-mobile-app.jpg "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -420,14 +454,24 @@
               </div>
               <div class="card-content">
                 <h3 class="head-three heder-three-portf">Meditation App</h3>
-                <p class="descripsion">App</p>
+                <p class="descripsion decription-mobile">App</p>
               </div>
             </li>
 
             <li class="our-portfolio-items">
               <div class="portfolio-image">
                 <img
-                  src="./images/taxi-service.jpg"
+                  srcset="
+                    ./images/taxi-service-mobile.jpg     288w,
+                    ./images/taxi-service-tablet.jpg     356w,
+                    ./images/taxi-service-desktop.jpg    360w,
+                    ./images/taxi-service-mobile@2x.jpg  576w,
+                    ./images/taxi-service-tablet@2x.jpg  712w,
+                    ./images/taxi-service-desktop@2x.jpg 720w,
+                    banking-tablet-app
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/taxi-service-mobile.jpg "
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -440,14 +484,24 @@
               </div>
               <div class="card-content">
                 <h3 class="head-three heder-three-portf">Taxi Service</h3>
-                <p class="descripsion">Marketing</p>
+                <p class="descripsion decription-mobile">Marketing</p>
               </div>
             </li>
 
             <li class="our-portfolio-items">
               <div class="portfolio-image">
                 <img
-                  src="./images/screen-illustrations.jpg"
+                  srcset="
+                    ./images/screen-illustrations-mobile.jpg     288w,
+                    ./images/screen-illustrations-tablet.jpg     356w,
+                    ./images/screen-illustrations-desktop.jpg    360w,
+                    ./images/screen-illustrations-mobile@2x.jpg  576w,
+                    ./images/screen-illustrations-tablet@2x.jpg  712w,
+                    ./images/screen-illustrations-desktop@2x.jpg 720w,
+                    banking-tablet-app
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/screen-illustrations-mobile.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -462,14 +516,24 @@
                 <h3 class="head-three heder-three-portf">
                   Screen Illustrations
                 </h3>
-                <p class="descripsion">Design</p>
+                <p class="descripsion decription-mobile">Design</p>
               </div>
             </li>
 
             <li class="our-portfolio-items">
               <div class="portfolio-image">
                 <img
-                  src="./images/online-courses.jpg"
+                  srcset="
+                    ./images/online-courses-mobile.jpg     288w,
+                    ./images/online-courses-tablet.jpg     356w,
+                    ./images/online-courses-desktop.jpg    360w,
+                    ./images/online-courses-mobile@2x.jpg  576w,
+                    ./images/online-courses-tablet@2x.jpg  712w,
+                    ./images/online-courses-desktop@2x.jpg 720w,
+                    banking-tablet-app
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./online-courses-mobile.jpg "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -482,12 +546,12 @@
               </div>
               <div class="card-content">
                 <h3 class="head-three heder-three-portf">Online Courses</h3>
-                <p class="descripsion">Marketing</p>
+                <p class="descripsion decription-mobile">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->

@@ -388,6 +388,11 @@ button {
   margin-bottom: 8px;
 }
 
+.portfolio-image-src {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ==============  END OUR PORTFOLIO MOBILE SECTION  ==================== */
 
 /* +++++++++++   FOOTER MOBILE   +++++++++++++++++++++++++++++ */
@@ -509,7 +514,6 @@ button {
   margin-right: auto;
 }
 .icon-footer-send {
-  margin-left: 16px;
   fill: #ffffff;
 }
 /* ============   END FOOTER MOBILE   =============================== */
@@ -850,7 +854,7 @@ button {
     height: 72px;
   }
   .container {
-    width: 800px;
+    width: 768px;
   }
   .navigation {
     display: flex;
@@ -1122,7 +1126,14 @@ button {
     background-color: #f4f4fd;
     height: 112px;
   }
-
+  .heder-three-about {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .descripsion {
+    font-weight: 400;
+  }
   /* ============== END ABOUT AS DESKTOP SECTION  ============== */
 
   /* ++++++++++++++ OUR TEAM DESKTOP SECTION ++++++++++++++ */

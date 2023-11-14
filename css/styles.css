@@ -919,7 +919,8 @@ button {
   /* +++++++++++   FOOTER DESKTOP SECTION   +++++++++++++++++++++++++++++ */
 
   .footer-group {
-    column-gap: 24px;
+    gap: 0;
+    flex-wrap: nowrap;
   }
 
   .container-subscribe {
@@ -931,6 +932,12 @@ button {
   }
   .logo-footer {
     margin: 0;
+  }
+  .logo-group {
+    margin-right: 120px;
+  }
+  .social-container {
+    margin-right: 80px;
   }
   /* ============   END FOOTER DESKTOP SECTION   =============================== */
 }

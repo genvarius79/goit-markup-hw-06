@@ -390,6 +390,125 @@ button {
 
 /* ==============  END OUR PORTFOLIO MOBILE SECTION  ==================== */
 
+/* +++++++++++   FOOTER MOBILE SECTION   +++++++++++++++++++++++++++++ */
+
+.page-footer {
+  background: #2e2f42;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.footer-description {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+.logo-footer-spn {
+  color: #f4f4fd;
+}
+.logo-footer {
+  display: inline-block;
+}
+.footer-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.footer-description-icon {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+.footer-icon {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.social-links .icon-link-footer:hover,
+.social-links .icon-link-footer:focus {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+  background-color: #31d0aa;
+}
+
+.container-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.text-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-footer {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+.btn-footer {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-footer-send {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+/* ============   END FOOTER MOBILE SECTION   =============================== */
+
 /*++++++++++++++++++    0 ....768px    +++++++++++++++++++++*/
 
 @media screen and (max-width: 768px) {
@@ -658,6 +777,35 @@ button {
   }
 
   /* ==============  END OUR PORTFOLIO TABLET SECTION  ==================== */
+
+  /* +++++++++++   FOOTER TABLET SECTION   +++++++++++++++++++++++++++++ */
+
+  .logo-group {
+    align-items: start;
+  }
+
+  .footer-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    padding-left: 108px;
+  }
+
+  .social-container {
+    align-items: start;
+    margin-bottom: auto;
+  }
+
+  .container-subscribe {
+    align-items: start;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  /* ============   END FOOTER TABLET SECTION   =============================== */
 }
 /* ============== END TABLET STYLES ============== */
 
@@ -762,5 +910,23 @@ button {
   }
 
   /* ==============  END OUR PORTFOLIO DESKTOP SECTION  ==================== */
+
+  /* +++++++++++   FOOTER DESKTOP SECTION   +++++++++++++++++++++++++++++ */
+
+  .footer-group {
+    column-gap: 24px;
+  }
+
+  .container-subscribe {
+    margin-bottom: auto;
+  }
+
+  .footer-form {
+    gap: 24px;
+  }
+  .logo-footer {
+    margin: 0;
+  }
+  /* ============   END FOOTER DESKTOP SECTION   =============================== */
 }
 /* ============== End DESKTOP STYLES ============== */

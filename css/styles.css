@@ -390,7 +390,7 @@ button {
 
 /* ==============  END OUR PORTFOLIO MOBILE SECTION  ==================== */
 
-/* +++++++++++   FOOTER MOBILE SECTION   +++++++++++++++++++++++++++++ */
+/* +++++++++++   FOOTER MOBILE   +++++++++++++++++++++++++++++ */
 
 .page-footer {
   background: #2e2f42;
@@ -512,7 +512,226 @@ button {
   margin-left: 16px;
   fill: #ffffff;
 }
-/* ============   END FOOTER MOBILE SECTION   =============================== */
+/* ============   END FOOTER MOBILE   =============================== */
+/* ++++++++++++++  MODAL MOBILE  ++++++++++++++++++++++++ */
+
+.backdrop {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 288px;
+  height: 623px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 16px 24px 16px;
+}
+
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover {
+  background-color: #404bbf;
+  border: none;
+}
+.close-button:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover .icon-close {
+  fill: #ffffff;
+}
+.close-button:focus .icon-close {
+  fill: #ffffff;
+}
+
+.modal-lable {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.lable-container {
+  margin-bottom: 8px;
+}
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.container-input {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.icon-form {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus + .icon-form {
+  fill: #4d5ae5;
+}
+
+.textarea-container {
+  margin-bottom: 16px;
+}
+
+.user-comment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-comment:focus {
+  border-color: #4d5ae5;
+}
+
+.form-input::placeholder {
+  color: #616161;
+}
+
+.chackbox-container {
+  margin-bottom: 24px;
+}
+.container-label-policy {
+  display: flex;
+  flex-direction: column;
+}
+.chackbox-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.span-acept {
+  text-wrap: nowrap;
+}
+.privacy-policy {
+  color: #4d5ae5;
+}
+
+.user-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.chackbox-user:checked + .chackbox-text .user-box {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.chackbox-user:focus + .chackbox-text .user-box {
+  outline: 2px solid rgba(46, 47, 66, 0.4);
+}
+
+.send-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+.send-button:focus {
+  background: #404bbf;
+}
+
+/* ==============  END MODAL MOBILE  ==================== */
 
 /*++++++++++++++++++    0 ....768px    +++++++++++++++++++++*/
 
@@ -783,7 +1002,7 @@ button {
 
   /* ==============  END OUR PORTFOLIO TABLET SECTION  ==================== */
 
-  /* +++++++++++   FOOTER TABLET SECTION   +++++++++++++++++++++++++++++ */
+  /* +++++++++++   FOOTER TABLET   +++++++++++++++++++++++++++++ */
 
   .logo-group {
     align-items: start;
@@ -810,7 +1029,24 @@ button {
     gap: 24px;
   }
 
-  /* ============   END FOOTER TABLET SECTION   =============================== */
+  /* ============   END FOOTER TABLET   =============================== */
+
+  /* ++++++++++++++  MODAL TABLET  ++++++++++++++++++++++++ */
+
+  .modal-window {
+    width: 408px;
+    height: 584px;
+  }
+
+  .container-label-policy {
+    display: block;
+  }
+
+  .span-acept {
+    text-wrap: nowrap;
+  }
+
+  /* ==============  END MODAL TIBLET  ==================== */
 }
 /* ============== END TABLET STYLES ============== */
 
@@ -916,7 +1152,7 @@ button {
 
   /* ==============  END OUR PORTFOLIO DESKTOP SECTION  ==================== */
 
-  /* +++++++++++   FOOTER DESKTOP SECTION   +++++++++++++++++++++++++++++ */
+  /* +++++++++++   FOOTER DESKTOP   +++++++++++++++++++++++++++++ */
 
   .footer-group {
     gap: 0;
@@ -939,6 +1175,6 @@ button {
   .social-container {
     margin-right: 80px;
   }
-  /* ============   END FOOTER DESKTOP SECTION   =============================== */
+  /* ============   END FOOTER DESKTOP  =============================== */
 }
 /* ============== End DESKTOP STYLES ============== */

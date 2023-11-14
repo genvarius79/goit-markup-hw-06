@@ -414,6 +414,11 @@ button {
 .logo-footer-spn {
   color: #f4f4fd;
 }
+.logo:focus .logo-footer-spn,
+.logo:hover .logo-footer-spn {
+  color: #404bbf;
+}
+
 .logo-footer {
   display: inline-block;
 }
